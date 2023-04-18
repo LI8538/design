@@ -138,12 +138,28 @@ nav li a:link {
 }
 
 h4 {
-    border-color: rgb(244, 4, 4);
-    border-style: solid;
-    /* border-bottom-width: thick; */
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
+   position:relative;
+   margin: 2rem;
+}
+
+h4::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px; 
+
+
+    /****** 
+    optional values below 
+    ******/
+     
+     /* center - (optional) use with adjusting width   */
+     margin: 0 auto;
+       left: 0;
+     right: 0;
+       width: 50%;
+       background: rgb(238, 16, 16);
+
 }
 
 #sec3 article img {
